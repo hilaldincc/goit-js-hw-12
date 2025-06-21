@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Paginated Image Gallery</title>
+    <script type="module" crossorigin src="/goit-js-hw-12/page-2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-DqB7j7Ix.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/styles-Ccj8yrX1.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Arama formu: Kullanıcının görsel aramak için sorgu girdiği alan -->
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <!-- Yükleme göstergesi: Görseller yüklenirken geçici olarak gösterilir -->
+      <div class="loader hidden">Loading images, please wait...</div>
+
+      <!-- Galeri: API'den dönen görsellerin yerleştirileceği alan -->
+      <div class="gallery"></div>
+
+      <!-- Load More butonu: Daha fazla görsel getirmek için kullanılır -->
+      <button class="load-more hidden">Load more</button>
+    </div>
+
+    <!-- Uygulamanın JavaScript dosyaları Vite modül sistemiyle bağlanıyor -->
+  </body>
+</html>
